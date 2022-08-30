@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+
+html{
+    background-color: rgba(137, 43, 226, 0.315);
+}
+
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: 25px;
+  padding: 50px 0 50px 0;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  font-size: 16px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 16px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.claseSection{
+    display: flex;
+    justify-content: center;
+}
+.contenido{
+   
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+   
+}
+.logo{
+width: 100px;
+padding: 10px;
+margin: 10px;
+border: 2px;
+position: relative;
+top: -80px;
+right: 840px;
+
+}
+.imgGlobal{
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex; 
+    margin-right: 30px;
+}
+.piePagina{
+ background-color: #000000;
+ color: #ffffff;
+ width: 100%;
+ height: 2rem;
+}
+.piePagina-texto{
+    text-align: center;
+    padding-top: 0,9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+ul, li{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding-right: 15px;
+}
+.menu{
+ padding: 2% 0% 0 65%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 80px 200px 80px;
+    grid-template-rows: 80px 200px 80px;
+    gap: 10px;
+    background-color:#C599D2 ;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+ .claseSection {
+   display:block;
+    }
+  }
+  .classLogo{
+    transform: skew(20deg);
+  }
+  @keyframes rotate {
+    0%{transform: translateX(100px);}
+    25%{transform: skew(60deg,60deg);}
+    50%{transform: rotate(45deg);}
+    70%{transform: translate(100px, 100px);}
+    100%{transform: scale(2,2);}
+  }
+  .animacion{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite
+  }
+
